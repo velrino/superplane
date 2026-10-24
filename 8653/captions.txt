@@ -1,0 +1,42 @@
+Issue #8653 — Screenshot captions
+
+These are unedited browser screenshots of a controlled local simulation.
+The real console components, API hooks, and NDJSON parser are used.
+The fixture provides simulated API responses. The browser clock is fixed for
+repeatable values. The screenshots do not show the private production task.
+
+01-before-hidden-step-durations.png
+Before: hidden step durations
+All three command durations are transparent until pointer hover.
+
+02-before-finished-live-session.png
+Before: run finished while viewed live
+The header shows the agent interval: 5m 30s.
+
+03-before-reopened-duration-jump.png
+Before: reopen the same finished log
+The header switches to 28m 20s without any change to the recorded run.
+
+05-after-visible-step-durations.png
+After: visible command durations
+Checkout 1s, Prompt 29s, and Wait 5m stay visible without pointer hover.
+
+06-after-run-time-explanation.png
+After: run time explanation
+The keyboard-accessible tooltip explains setup, waits, concurrent runs, and the queue.
+
+07-after-finished-live-session.png
+After: run finished while viewed live
+The header uses the run duration: 28m 20s.
+
+08-after-reopened-consistent-duration.png
+After: reopen the same finished log
+The header remains 28m 20s after reopening.
+
+09-after-dark-theme.png
+After: dark theme
+The shared theme preserves readable command durations.
+
+10-after-mobile-width.png
+After: narrow viewport
+At 390 CSS pixels, all command durations remain visible and the page has no horizontal overflow.
