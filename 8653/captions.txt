@@ -1,42 +1,50 @@
 Issue #8653 — Screenshot captions
 
-These are unedited browser screenshots of a controlled local simulation.
-The real console components, API hooks, and NDJSON parser are used.
-The fixture provides simulated API responses. The browser clock is fixed for
-repeatable values. The screenshots do not show the private production task.
+These are unedited Chromium screenshots of a controlled local Storybook simulation.
+The simulation uses real application components, API hooks, and the NDJSON parser.
+API responses and the fixed browser clock are simulated.
+
+The fixture defines a 28m 20s run and starts the agent 22m 50s later.
+Checkout 1s, Prompt 29s, and Wait 5m total 5m 30s.
+The interval before the agent starts is an input to the simulation.
+It does not establish a setup, queue, or other cause for the production discrepancy.
+
+Before: the open live view shows agent time; reopening shows run time.
+After: both views consistently show Run time 28m 20s.
+The private production task was not accessed. Its 28-minute cause remains unverified.
 
 01-before-hidden-step-durations.png
-Before: hidden step durations
-All three command durations are transparent until pointer hover.
+Before: Command durations require hover
+The Checkout, Prompt, and Wait durations are hidden until pointer hover.
 
 02-before-finished-live-session.png
-Before: run finished while viewed live
-The header shows the agent interval: 5m 30s.
+Before: Agent time shown at completion
+After completion in the open live view, the header shows agent time: 5m 30s. Reopening changes the metric, as the next capture shows.
 
 03-before-reopened-duration-jump.png
-Before: reopen the same finished log
-The header switches to 28m 20s without any change to the recorded run.
+Before: Reopening changes the duration metric
+The reopened view shows run time: 28m 20s. The same recorded run showed agent time, 5m 30s, before reopening.
 
 05-after-visible-step-durations.png
-After: visible command durations
-Checkout 1s, Prompt 29s, and Wait 5m stay visible without pointer hover.
+After: Command durations remain visible
+Checkout 1s, Prompt 29s, and Wait 5m remain visible without pointer hover.
 
 06-after-run-time-explanation.png
-After: run time explanation
-The keyboard-accessible tooltip explains setup, waits, concurrent runs, and the queue.
+After: Run time explanation with keyboard focus
+The tooltip explains setup and waits, separate counting of concurrent runs, and exclusion of currently queued runs. Keyboard focus opens it.
 
 07-after-finished-live-session.png
-After: run finished while viewed live
-The header uses the run duration: 28m 20s.
+After: Run duration shown at completion
+After completion in the open live view, the header shows Run time 28m 20s. This includes the simulated 22m 50s before the agent starts.
 
 08-after-reopened-consistent-duration.png
-After: reopen the same finished log
-The header remains 28m 20s after reopening.
+After: Run duration stays unchanged after reopening
+The reopened view keeps Run time 28m 20s, matching the value shown before reopening.
 
 09-after-dark-theme.png
-After: dark theme
-The shared theme preserves readable command durations.
+After: Command durations in the dark theme
+Checkout 1s, Prompt 29s, and Wait 5m remain visible in the dark theme.
 
 10-after-mobile-width.png
-After: narrow viewport
-At 390 CSS pixels, all command durations remain visible and the page has no horizontal overflow.
+After: Command durations at 390 CSS pixels
+At 390 CSS pixels, all three command durations remain visible. The header wraps, and the page has no horizontal overflow.

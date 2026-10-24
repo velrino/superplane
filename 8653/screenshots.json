@@ -1,72 +1,72 @@
 [
   {
     "file": "01-before-hidden-step-durations.png",
-    "title": "Before: hidden step durations",
-    "description": "All three command durations are transparent until pointer hover.",
+    "title": "Before: Command durations require hover",
+    "description": "The Checkout, Prompt, and Wait durations are hidden until pointer hover.",
     "width": 2880,
     "height": 1280,
     "sha256": "f57a63510406dca1abe15c5c685fb47abb674346ea58b2a4b7ca3b8d7384ef88"
   },
   {
     "file": "02-before-finished-live-session.png",
-    "title": "Before: run finished while viewed live",
-    "description": "The header shows the agent interval: 5m 30s.",
+    "title": "Before: Agent time shown at completion",
+    "description": "After completion in the open live view, the header shows agent time: 5m 30s. Reopening changes the metric, as the next capture shows.",
     "width": 2880,
     "height": 1280,
     "sha256": "faca4f0427388c2813010f30879c5110d17edc15d6a9b85a8737c422b19c3c0c"
   },
   {
     "file": "03-before-reopened-duration-jump.png",
-    "title": "Before: reopen the same finished log",
-    "description": "The header switches to 28m 20s without any change to the recorded run.",
+    "title": "Before: Reopening changes the duration metric",
+    "description": "The reopened view shows run time: 28m 20s. The same recorded run showed agent time, 5m 30s, before reopening.",
     "width": 2880,
     "height": 1280,
     "sha256": "df95e3e7eebf13dac423408ead34f91ec2ba66de1c1c82d14d7ad3319ce8a13a"
   },
   {
     "file": "05-after-visible-step-durations.png",
-    "title": "After: visible command durations",
-    "description": "Checkout 1s, Prompt 29s, and Wait 5m stay visible without pointer hover.",
+    "title": "After: Command durations remain visible",
+    "description": "Checkout 1s, Prompt 29s, and Wait 5m remain visible without pointer hover.",
     "width": 2880,
     "height": 1280,
     "sha256": "0a4825769cdf900a4280a0009baae995c64ebc9d960df0e63f6927f3412746f1"
   },
   {
     "file": "06-after-run-time-explanation.png",
-    "title": "After: run time explanation",
-    "description": "The keyboard-accessible tooltip explains setup, waits, concurrent runs, and the queue.",
+    "title": "After: Run time explanation with keyboard focus",
+    "description": "The tooltip explains setup and waits, separate counting of concurrent runs, and exclusion of currently queued runs. Keyboard focus opens it.",
     "width": 2880,
     "height": 1280,
     "sha256": "b68aaf933908eb44f648acc059dc6cef63bdb651de27b283a4407edd18240017"
   },
   {
     "file": "07-after-finished-live-session.png",
-    "title": "After: run finished while viewed live",
-    "description": "The header uses the run duration: 28m 20s.",
+    "title": "After: Run duration shown at completion",
+    "description": "After completion in the open live view, the header shows Run time 28m 20s. This includes the simulated 22m 50s before the agent starts.",
     "width": 2880,
     "height": 1280,
     "sha256": "9f034f92afcee35ca321c9ec52a2517496eaaf10360805f1ced3ff887430fccf"
   },
   {
     "file": "08-after-reopened-consistent-duration.png",
-    "title": "After: reopen the same finished log",
-    "description": "The header remains 28m 20s after reopening.",
+    "title": "After: Run duration stays unchanged after reopening",
+    "description": "The reopened view keeps Run time 28m 20s, matching the value shown before reopening.",
     "width": 2880,
     "height": 1280,
     "sha256": "9f034f92afcee35ca321c9ec52a2517496eaaf10360805f1ced3ff887430fccf"
   },
   {
     "file": "09-after-dark-theme.png",
-    "title": "After: dark theme",
-    "description": "The shared theme preserves readable command durations.",
+    "title": "After: Command durations in the dark theme",
+    "description": "Checkout 1s, Prompt 29s, and Wait 5m remain visible in the dark theme.",
     "width": 2880,
     "height": 1280,
     "sha256": "156a7e612f93a5e22655a7e8ba2679376399dd277ccde4e5bd321fa15c817321"
   },
   {
     "file": "10-after-mobile-width.png",
-    "title": "After: narrow viewport",
-    "description": "At 390 CSS pixels, all command durations remain visible and the page has no horizontal overflow.",
+    "title": "After: Command durations at 390 CSS pixels",
+    "description": "At 390 CSS pixels, all three command durations remain visible. The header wraps, and the page has no horizontal overflow.",
     "width": 780,
     "height": 1688,
     "sha256": "1a710d5a333ec5f368ca0b1655eb84ad6380cbf0a18c3b20838daf18ff29141d"
