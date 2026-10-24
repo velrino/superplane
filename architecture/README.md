@@ -22,7 +22,8 @@ architecture/
 [System architecture](source/output/system-architecture.png) · [Design system](source/output/design-system.png)
 
 All output images are PNGs. Icons, titles, and descriptions have separate layout rows.
-The images await user review before an upstream pull request is created.
+The diagrams are proposed in [PR #8880](https://github.com/superplanehq/superplane/pull/8880).
+Feedback and the purpose of this contribution are tracked in [issue #8879](https://github.com/superplanehq/superplane/issues/8879).
 
 ## Contribution boundary
 
@@ -32,6 +33,6 @@ It has an independent history and is not the source branch for an upstream pull 
 The [documentation branch](https://github.com/velrino/superplane/tree/docs/architecture-overview/docs/architecture)
 starts from the upstream main revision and contains the documentation and final PNGs.
 It also corrects outdated statements in the existing architecture guide.
-No upstream pull request has been created.
+The upstream PR is open for review and contains documentation and final PNGs only.
 
 See [source/README.md](source/README.md) to regenerate the diagrams.

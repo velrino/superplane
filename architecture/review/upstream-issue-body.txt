@@ -1,0 +1,28 @@
+## Purpose
+
+The existing documentation provides useful detail about SuperPlane. I would like to complement it with a visual starting point for people who are new to the project.
+
+The aim is to help new users and contributors, including readers with less technical experience, understand how the main parts fit together. Readers could start with the overall picture and follow links when they want more detail.
+
+I hope this can also provide a shared reference for experienced contributors when planning changes, discussing dependencies, maintaining the system, or reviewing contributions.
+
+## Proposed first step
+
+- Add an introductory guide under `docs/architecture/` with plain-language explanations and links to existing documentation and source code.
+- Include a system architecture diagram showing the main responsibilities and execution paths.
+- Include a design system map showing shared foundations and the component families used by the interface.
+- Update the existing architecture guide where its descriptions differ from the current source.
+
+The initial scope is a high-level view of the current system. The diagrams should state their boundaries and the source revision they describe.
+
+## How this could grow
+
+If the overview proves useful, smaller views of individual workflows could follow over time. For example, a view could explain one request's lifecycle, event processing, or runner execution.
+
+These would be follow-up contributions, guided by maintainer feedback. Together, the views could make it easier to learn the project and discuss future changes at different levels of detail.
+
+## Review
+
+A [first version of the guide and diagrams](https://github.com/velrino/superplane/tree/docs/architecture-overview/docs/architecture) is available for review.
+
+I would appreciate suggestions on both accuracy and clarity, especially where a relationship needs more context or a simpler explanation.

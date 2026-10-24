@@ -1,0 +1,42 @@
+## Purpose
+
+I hope these maps can offer a more approachable starting point for new SuperPlane users and contributors, including readers with less technical experience.
+
+They complement the existing guides with an overview of how the main parts fit together. Readers can start with the diagrams and follow documentation and source links at their own pace.
+
+The same reference can help experienced contributors plan changes, discuss dependencies, maintain the system, and review contributions. Focused views of individual workflows could build on this overview in future contributions, where the community finds them useful.
+
+## Summary
+
+Closes #8879.
+
+- Add an introductory architecture guide with a reading path, plain-language terms, and links to implementation details.
+- Map the main runtime responsibilities and the integrated runner path in a system diagram.
+- Map the existing UI foundations, component families, and product composition in a design system diagram.
+- Update the existing architecture guide to match the current gateway, durable work, runner, and storage paths.
+
+[Read the guide](https://github.com/velrino/superplane/blob/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/readme.md).
+
+The diagrams describe logical responsibilities at source revision `bfb220601`. Deployment roles and optional paths depend on configuration, as explained in the guide.
+
+## Diagrams
+
+### System architecture
+
+An overview of client requests, application modules, durable state, runners, and external providers. Select the image to view it at full resolution.
+
+[![SuperPlane system architecture](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/system-architecture.png)](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/system-architecture.png)
+
+### Design system
+
+Shared tokens and themes, coexisting UI families, product composition, Storybook, and behavior checks. The arrows describe composition and review relationships.
+
+[![SuperPlane design system map](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/design-system.png)](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/design-system.png)
+
+## Review notes
+
+This contribution changes documentation and PNG images only. The renderer, individual symbols, and supporting materials remain in the [artifact branch](https://github.com/velrino/superplane/tree/artifacts/architecture/architecture) of my fork.
+
+The diagrams were reviewed against the linked source and checked for readable labels. Both PNGs are 3840 × 2160, and all 49 relative documentation links resolve. The whitespace check passed. Application tests and builds were not run for these documentation changes.
+
+I would appreciate feedback on accuracy and readability so the guide can improve with the project. Focused workflow diagrams remain possible follow-up work.

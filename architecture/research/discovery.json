@@ -11,5 +11,8 @@
     "https://github.com/superplanehq/superplane/issues/158"
   ],
   "scope": "Source-linked visual maps and accuracy corrections to existing documentation",
-  "upstream_pr_created": false
+  "upstream_pr_created": true,
+  "search_timing": "Before creating the upstream issue and PR",
+  "upstream_issue": "https://github.com/superplanehq/superplane/issues/8879",
+  "upstream_pr": "https://github.com/superplanehq/superplane/pull/8880"
 }

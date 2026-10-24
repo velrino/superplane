@@ -33,6 +33,11 @@ Arrows show composition and review relationships, not strict import boundaries.
 
 [![SuperPlane design system](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/design-system.png)](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/design-system.png)
 
+## Upstream contribution
+
+- [Issue #8879](https://github.com/superplanehq/superplane/issues/8879)
+- [PR #8880](https://github.com/superplanehq/superplane/pull/8880) — open for review.
+
 ## Status
 
 - [x] Review existing documentation, related issues, and current source code.
@@ -40,7 +45,7 @@ Arrows show composition and review relationships, not strict import boundaries.
 - [x] Generate PNG diagrams and separate icons from labels for readability.
 - [x] Organize symbols, sources, output, and review materials.
 - [x] Check diagram semantics, image dimensions, and documentation links.
-- [ ] Obtain the author's approval of the images.
-- [ ] Open the upstream PR after that approval.
+- [x] The author authorized publication of the current images.
+- [x] Open the upstream PR and link it to the upstream issue.
 
-The future upstream PR includes documentation and final PNGs. Python, individual symbols, and review materials stay in this fork.
+The upstream PR includes documentation and final PNGs. Python, individual symbols, and review materials stay in this fork.
