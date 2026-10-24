@@ -1,41 +1,37 @@
-# SuperPlane architecture diagram sources
+# Architecture and design system materials
 
-This artifact branch contains the renderer and symbols for the architecture documentation.
-It is separate from the source contribution to SuperPlane.
+This branch stores supporting materials for the SuperPlane architecture documentation.
+The diagrams describe existing code at main revision `bfb220601`.
 
 ## Layout
 
 ```text
 architecture/
 ├── README.md
-├── architecture_graphviz.py
-├── symbols/                  # All technology and neutral icons
-└── output/                   # Two final 3840 × 2160 PNGs
-    ├── system-architecture.png
-    └── design-system.png
+├── research/                 # Existing docs, related issues, and base revision
+├── review/                   # Image validation and tracking-issue description
+└── source/
+    ├── README.md             # Reproduction instructions
+    ├── architecture_graphviz.py
+    ├── symbols/              # All 16 icons
+    └── output/               # Two final PNGs, 3840 × 2160
 ```
 
-## Render
+## Diagrams
 
-Requirements: Graphviz (`dot` on PATH) and `uv`.
-The Python script declares its Python and package requirements inline.
+[System architecture](source/output/system-architecture.png) · [Design system](source/output/design-system.png)
 
-```sh
-uv run architecture_graphviz.py
-```
+All output images are PNGs. Icons, titles, and descriptions have separate layout rows.
+The images await user review before an upstream pull request is created.
 
-The script renders both diagrams and writes PNGs only.
-Each icon, title, and description occupies a separate table row.
-Graphviz lays out the logical graph; Pillow fits it onto a 16:9 canvas.
-Technology icons come from the `diagrams` package. Neutral symbols are drawn by the script.
-All symbols are collected in `symbols/` and can be regenerated.
+## Contribution boundary
 
-## Scope
+This `artifacts/architecture` branch contains the renderer, symbols, and review materials.
+It has an independent history and is not the source branch for an upstream pull request.
 
-The diagrams describe source main at `bfb220601dae150e1f635a840ac597c0d6ad669d`.
-The system map follows the integrated runner path and shows selected relationships.
-The design system map describes existing composition, not a proposed replacement.
-See the documentation README for optional paths and source references.
+The [documentation branch](https://github.com/velrino/superplane/tree/docs/architecture-overview/docs/architecture)
+starts from the upstream main revision and contains the documentation and final PNGs.
+It also corrects outdated statements in the existing architecture guide.
+No upstream pull request has been created.
 
-Only the documentation and final PNGs belong in the SuperPlane contribution.
-The renderer and individual symbols remain in this artifact branch.
+See [source/README.md](source/README.md) to regenerate the diagrams.

@@ -1,0 +1,15 @@
+{
+  "reviewed_revision": "bfb220601dae150e1f635a840ac597c0d6ad669d",
+  "existing_architecture_guide": "docs/contributing/architecture.md",
+  "existing_frontend_guidance": "web_src/AGENTS.md",
+  "existing_token_catalog": "web_src/src/pages/factories/DesignTokens.stories.tsx",
+  "existing_architecture_directory": "empty before this contribution",
+  "dedicated_open_issue_found": false,
+  "matching_open_documentation_pr_found": false,
+  "related_closed_issues": [
+    "https://github.com/superplanehq/superplane/issues/6324",
+    "https://github.com/superplanehq/superplane/issues/158"
+  ],
+  "scope": "Source-linked visual maps and accuracy corrections to existing documentation",
+  "upstream_pr_created": false
+}

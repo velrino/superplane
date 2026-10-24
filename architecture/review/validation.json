@@ -1,0 +1,23 @@
+{
+  "relative_links_checked": 49,
+  "images": [
+    {
+      "file": "system-architecture.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "987ece88a29e7a8dfc52c67f285fc62daa45dbfd9c556941604524d531a81830"
+    },
+    {
+      "file": "design-system.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "1728ccc74bc909bd215c9a8366583221584e50df06e95295b950d7b47df7d849"
+    }
+  ],
+  "png_only": true,
+  "source_layout": [
+    "architecture_graphviz.py",
+    "symbols/",
+    "output/"
+  ]
+}

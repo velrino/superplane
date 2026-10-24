@@ -1,0 +1,46 @@
+## Purpose
+
+Track the architecture and design system diagrams, editable sources, and image review for the SuperPlane documentation contribution.
+
+The upstream repository already has an architecture guide and frontend guidance. The new work adds visual maps and corrects outdated descriptions.
+The review did not find a dedicated open issue or an equivalent open documentation PR.
+
+## Materials
+
+- [Artifact branch](https://github.com/velrino/superplane/tree/artifacts/architecture/architecture): research, review notes, renderer, symbols, and final images.
+- [Python renderer](https://github.com/velrino/superplane/blob/artifacts/architecture/architecture/source/architecture_graphviz.py).
+- [Symbols](https://github.com/velrino/superplane/tree/artifacts/architecture/architecture/source/symbols): all icons in one folder.
+- [PNG output](https://github.com/velrino/superplane/tree/artifacts/architecture/architecture/source/output): two 3840 × 2160 images; no SVG output.
+- [Documentation branch](https://github.com/velrino/superplane/tree/docs/architecture-overview/docs/architecture): the proposed upstream documentation and PNGs.
+
+The documentation branch starts from upstream main at `bfb220601dae150e1f635a840ac597c0d6ad669d`.
+It excludes the pending Notion and task-log contributions.
+The artifact branch has independent history and will not be used as an upstream PR head.
+
+## Image review
+
+### System architecture
+
+Logical modules, durable execution, storage, and the integrated runner path.
+Optional paths and configuration boundaries are explained in the documentation README.
+
+[![SuperPlane system architecture](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/system-architecture.png)](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/system-architecture.png)
+
+### Design system
+
+Shared tokens and themes, coexisting UI families, product composition, Storybook, and behavior checks.
+Arrows show composition and review relationships, not strict import boundaries.
+
+[![SuperPlane design system](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/design-system.png)](https://raw.githubusercontent.com/velrino/superplane/artifacts/architecture/architecture/source/output/design-system.png)
+
+## Status
+
+- [x] Review existing documentation, related issues, and current source code.
+- [x] Create an isolated documentation branch from the latest main checked during preparation.
+- [x] Generate PNG diagrams and separate icons from labels for readability.
+- [x] Organize symbols, sources, output, and review materials.
+- [x] Check diagram semantics, image dimensions, and documentation links.
+- [ ] Obtain the author's approval of the images.
+- [ ] Open the upstream PR after that approval.
+
+The future upstream PR includes documentation and final PNGs. Python, individual symbols, and review materials stay in this fork.

@@ -1,0 +1,9 @@
+{
+  "branch": "docs/architecture-overview",
+  "base": "bfb220601dae150e1f635a840ac597c0d6ad669d",
+  "upstream": "superplanehq/superplane",
+  "excluded_pending_heads": [
+    "0c6fe7f7b1b2e86f9f6c1398a790dcbeee9759d4",
+    "bc72c281413f2d3aa7ea4939e05c2451f77f7d7e"
+  ]
+}
