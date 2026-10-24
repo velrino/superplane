@@ -1,28 +1,21 @@
 ## Purpose
 
-The existing documentation provides useful detail about SuperPlane. I would like to complement it with a visual starting point for people who are new to the project.
+Complement the existing documentation with a visual overview of SuperPlane's architecture and design system.
 
-The aim is to help new users and contributors, including readers with less technical experience, understand how the main parts fit together. Readers could start with the overall picture and follow links when they want more detail.
+I hope this gives newcomers, including readers with less technical experience, a clearer starting point. It can also give experienced contributors a shared reference for planning, maintenance, and review.
 
-I hope this can also provide a shared reference for experienced contributors when planning changes, discussing dependencies, maintaining the system, or reviewing contributions.
+Focused views of individual workflows could follow over time.
 
-## Proposed first step
+Proposed implementation: [PR #8880](https://github.com/superplanehq/superplane/pull/8880).
 
-- Add an introductory guide under `docs/architecture/` with plain-language explanations and links to existing documentation and source code.
-- Include a system architecture diagram showing the main responsibilities and execution paths.
-- Include a design system map showing shared foundations and the component families used by the interface.
-- Update the existing architecture guide where its descriptions differ from the current source.
+## Examples
 
-The initial scope is a high-level view of the current system. The diagrams should state their boundaries and the source revision they describe.
+These images are initial examples. I would be happy to adjust the layout, colors, symbols, or level of detail to fit the project's preferences.
 
-## How this could grow
+### System architecture
 
-If the overview proves useful, smaller views of individual workflows could follow over time. For example, a view could explain one request's lifecycle, event processing, or runner execution.
+[![Example system architecture diagram](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/system-architecture.png)](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/system-architecture.png)
 
-These would be follow-up contributions, guided by maintainer feedback. Together, the views could make it easier to learn the project and discuss future changes at different levels of detail.
+### Design system
 
-## Review
-
-A [first version of the guide and diagrams](https://github.com/velrino/superplane/tree/docs/architecture-overview/docs/architecture) is available for review.
-
-I would appreciate suggestions on both accuracy and clarity, especially where a relationship needs more context or a simpler explanation.
+[![Example design system diagram](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/design-system.png)](https://raw.githubusercontent.com/velrino/superplane/77247b3c68bd7d81cf8f25d8bb7d59af1744ca4a/docs/architecture/images/design-system.png)
