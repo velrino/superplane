@@ -1,0 +1,48 @@
+{
+  "artifact_type": "publication review summary",
+  "reviewed_at_utc": "2026-10-26T17:34:46.596850+00:00",
+  "scope": "Only the selected publication files in this directory.",
+  "original_pngs_verified_against_source_metadata": 3,
+  "original_raw_logs_copied_unchanged": 3,
+  "selected_log_excerpt_source_lines_verified": 5,
+  "publication_text_files_scanned": 10,
+  "pattern_checks": [
+    "aws_access_key",
+    "github_token",
+    "private_key_header",
+    "authorization_bearer_value",
+    "credential_assignment",
+    "absolute_personal_path",
+    "ipv4_address",
+    "aws_resource_identifier",
+    "private_directory_path"
+  ],
+  "pattern_findings": [],
+  "known_source_cloud_identifiers_checked": 17,
+  "known_source_cloud_identifier_matches": 0,
+  "visual_review": {
+    "original_pngs_reviewed": 3,
+    "observed": "The app captures show synthetic .example owner accounts. The docs capture shows public command examples. No credentials or cloud addresses were visible."
+  },
+  "prior_source_exact_value_scans": [
+    {
+      "observed_at": "2026-10-26T17:13:50.211489+00:00",
+      "provider": "aws",
+      "known_values_and_private_key_chunks": 227,
+      "scanned_files_and_members": 11513,
+      "matching_paths": [],
+      "passed": true
+    },
+    {
+      "observed_at": "2026-10-26T17:16:59.106400+00:00",
+      "provider": "gcp",
+      "known_values_and_private_key_chunks": 57,
+      "scanned_files_and_members": 347,
+      "matching_paths": [],
+      "passed": true
+    }
+  ],
+  "exact_value_rescan_performed": false,
+  "exact_value_rescan_limit": "The original private credential inputs were deleted after cleanup. Their earlier exact-value scans passed, but those scans were not repeated.",
+  "limit": "Pattern checks, selected known-identifier checks, and visual review do not prove that all possible secrets are absent."
+}

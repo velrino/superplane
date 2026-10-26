@@ -1,0 +1,8 @@
+EXCERPT: selected unchanged lines from the original AWS v5 runtime log.
+This is not the complete log. Source line numbers: 1, 2, 24, 25, 273.
+
+Observed: 2026-10-26T17:00:10.927715+00:00
+Exit code: 0
+Single-host tarball tests passed.
+SuperPlane release pipeline tests passed.
+Single-host smoke test passed. Evidence: /opt/superplane-qa/smoke-evidence-v5

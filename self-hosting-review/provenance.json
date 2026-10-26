@@ -1,0 +1,181 @@
+{
+  "artifact_type": "publication provenance",
+  "source_path_base": "local/self-hosting/",
+  "sources_are_local_paths": "Source paths identify local evidence. Only the selected files in this directory are published.",
+  "files": [
+    {
+      "file": "images/aws-ui-after-resume.png",
+      "kind": "original PNG",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/screenshots/app/04-after-preserve-resume.png",
+          "sha256": "fba4638ccd2f6ca1edfae44d783d79745580a9130949d2d0670835e12e5a8b4a"
+        }
+      ],
+      "original_unedited": true,
+      "metadata_source": "evidences/aws/single-vm/20261026T160048Z/screenshots/app/metadata.json",
+      "matches_original_metadata": true,
+      "observed_at_utc": "2026-10-26T16:45:22.156Z",
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "file": "images/gcp-ui-after-resume.png",
+      "kind": "original PNG",
+      "sources": [
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/screenshots/app/04-after-preserve-resume.png",
+          "sha256": "5fad2600023e1f7a6033608e984f6ab148c8e671586658dbf28dd7df8c3b9a41"
+        }
+      ],
+      "original_unedited": true,
+      "metadata_source": "evidences/gcp/single-vm/20261026t162735z/screenshots/app/metadata.json",
+      "matches_original_metadata": true,
+      "observed_at_utc": "2026-10-26T17:10:14.676Z",
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "file": "images/docs-preserve-or-purge.png",
+      "kind": "original PNG",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/screenshots/docs/02-docs-preserve-or-purge-v2.png",
+          "sha256": "dc3af8d8396e6538a7e6f128c847bb1de04baf3723daa31b5cf3395ce781487e"
+        }
+      ],
+      "original_unedited": true,
+      "metadata_source": "evidences/aws/single-vm/20261026T160048Z/screenshots/docs/metadata.json",
+      "matches_original_metadata": true,
+      "observed_at_utc": "2026-10-26T17:11:23.037Z",
+      "width": 1440,
+      "height": 1100
+    },
+    {
+      "file": "logs/aws-published-uninstall.log",
+      "kind": "original complete raw log",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T150032Z/15-documented-uninstall.log",
+          "sha256": "1dd7cc147f80a10f678b5eba2209c59b308cf435cfdad0fca3f9cec68ee753d8"
+        }
+      ],
+      "original_unedited": true
+    },
+    {
+      "file": "logs/gcp-after-purge.log",
+      "kind": "original complete raw log",
+      "sources": [
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/30-after-purge-inventory.log",
+          "sha256": "84b5d9d18832fed03efd581339a5426d390473cba3969802900f306225bfe16c"
+        }
+      ],
+      "original_unedited": true
+    },
+    {
+      "file": "logs/gcp-repeat-purge.log",
+      "kind": "original complete raw log",
+      "sources": [
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/31-repeat-purge.log",
+          "sha256": "bb735dca6b48e0c530ca6d3b70b41c9a695bca39e88c297ce4c10fcf2191a5ae"
+        }
+      ],
+      "original_unedited": true
+    },
+    {
+      "file": "logs/aws-v5-result-excerpt.txt",
+      "kind": "selected unmodified log lines with an explanatory header",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/validation/runtime-smoke-v5.log",
+          "sha256": "12c38a7ea78fb29569c64fc18c22370c2d298c9a789c33d269dd139132eff56c"
+        }
+      ],
+      "source_line_numbers": [
+        1,
+        2,
+        24,
+        25,
+        273
+      ]
+    },
+    {
+      "file": "reports/published-uninstall.json",
+      "kind": "selected-field summary",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T150032Z/15-documented-uninstall.log",
+          "sha256": "1dd7cc147f80a10f678b5eba2209c59b308cf435cfdad0fca3f9cec68ee753d8"
+        },
+        {
+          "path": "evidences/aws/single-vm/20261026T150032Z/16-after-uninstall.log",
+          "sha256": "c5c75250391b394df57a6f996755a5bd00c6f01c50a9497261c97db8d5c8af09"
+        }
+      ]
+    },
+    {
+      "file": "reports/aws-v5-runtime.json",
+      "kind": "selected-field summary",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/validation/runtime-smoke-v5.log",
+          "sha256": "12c38a7ea78fb29569c64fc18c22370c2d298c9a789c33d269dd139132eff56c"
+        },
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/README.txt",
+          "sha256": "ec354364c7b7d44a52b407e0b3975c0d1d0d47187a58d27c879fbafdc67c4525"
+        },
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/runtime-artifacts/smoke-evidence-v5/diagnostics-ready/summary.json",
+          "sha256": "c3fa672cc3fea23530b0c598a9384d198d61aec0c7bdeb3aaf8c680215fd6d2a"
+        },
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/runtime-artifacts/smoke-evidence-v5/diagnostics-no-runners/summary.json",
+          "sha256": "117ddd1d092c08ab9f872a25b6ab49d1904c2c2832197e5446bdd83bb22c25dd"
+        }
+      ]
+    },
+    {
+      "file": "reports/gcp-lifecycle.json",
+      "kind": "selected-field summary",
+      "sources": [
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/runtime-summary.json",
+          "sha256": "5c7647bb9c3478474fc9e227480bd25974eb15cdfdac63816c0be94b296d6879"
+        },
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/26-resume-validation.json",
+          "sha256": "1461bb0692edc48575d4d4621df7caf2dace42be38eb72716656039e57d16d2a"
+        },
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/30-after-purge-inventory.log",
+          "sha256": "84b5d9d18832fed03efd581339a5426d390473cba3969802900f306225bfe16c"
+        },
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/31-repeat-purge.log",
+          "sha256": "bb735dca6b48e0c530ca6d3b70b41c9a695bca39e88c297ce4c10fcf2191a5ae"
+        }
+      ]
+    },
+    {
+      "file": "reports/cloud-cleanup.json",
+      "kind": "selected-field summary",
+      "sources": [
+        {
+          "path": "evidences/aws/single-vm/20261026T150032Z/cleanup-20261026T152647702250Z.json",
+          "sha256": "3cc8e6dc68912d66a7f9c12253fe0480a706b078014203ff28c2a0b3a1f812cb"
+        },
+        {
+          "path": "evidences/aws/single-vm/20261026T160048Z/cleanup-20261026T170154641184Z.json",
+          "sha256": "1a80adf82c10abc28ebc44daa7b9e3d38a10cf155d7854066d8df620fe21f72e"
+        },
+        {
+          "path": "evidences/gcp/single-vm/20261026t162735z/cleanup-20261026T171259.json",
+          "sha256": "54946e116b52dc4806b6ad9693af1e526102ea431e7b812ff85ba57eb87bd28d"
+        }
+      ]
+    }
+  ]
+}

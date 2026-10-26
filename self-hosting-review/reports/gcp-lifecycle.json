@@ -1,0 +1,52 @@
+{
+  "artifact_type": "selected-field summary",
+  "provider": "gcp",
+  "observed_at": "2026-10-26T17:16:59.026123+00:00",
+  "installation_exit_code": 0,
+  "initial_candidate": "v4",
+  "lifecycle_scripts_candidate": "v5",
+  "candidate_v5_sha256": "b97a4dd8d476e89d435a654f1a4bddad06117f35a1629930348af821e5b33650",
+  "ui_onboarding": "passed",
+  "ui_preserve_resume": "passed",
+  "preserve_uninstall_exit_code": 0,
+  "preserved_volumes": 7,
+  "resume_install_exit_code": 0,
+  "physical_running_runners_after_resume": 1,
+  "api_idle_runners_after_resume": 1,
+  "api_terminated_runners_after_resume": 1,
+  "configuration_fingerprints_unchanged": true,
+  "accounts_before_and_after": 1,
+  "organizations_before_and_after": 1,
+  "purge_uninstall_exit_code": 0,
+  "repeat_purge_exit_code": 0,
+  "final_docker_containers": 0,
+  "final_project_networks": 0,
+  "final_project_volumes": 0,
+  "cloud_cleanup_status": "complete",
+  "cleanup_verified": true,
+  "resume_validation": {
+    "observed_at": "2026-10-26T17:05:32.356994+00:00",
+    "containers_after_preserve": 0,
+    "project_network_after_preserve": false,
+    "diagnostics_ready": true,
+    "tls_verification_enabled": true,
+    "external_https_health_status": 200,
+    "physical_runner_checks": [
+      {
+        "name": "runners-e1-large-amd64",
+        "passed": true,
+        "detail": "The API reports 1 idle or busy runners; Docker has 1 running containers on the verified fleet network."
+      }
+    ],
+    "persistent_counts_before": {
+      "accounts": 1,
+      "organizations": 1
+    },
+    "persistent_counts_after": {
+      "accounts": 1,
+      "organizations": 1
+    }
+  },
+  "purge_retains": "Host configuration and original signing key files remain until the VM and its disk are removed.",
+  "omitted": "Cloud resource identifiers, configuration filenames, generation fingerprint, and unrelated scope fields."
+}

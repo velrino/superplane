@@ -1,0 +1,51 @@
+{
+  "artifact_type": "selected-field summary",
+  "runs": [
+    {
+      "provider": "aws",
+      "scenario": "Published release baseline",
+      "started_at": "2026-10-26T15:26:47.702435+00:00",
+      "finished_at": "2026-10-26T15:27:39.514407+00:00",
+      "status": "complete",
+      "mode": "execute",
+      "cleanup_verified": true,
+      "remaining_task_resources": 0,
+      "errors": 0,
+      "unverified_resources": 0,
+      "historical_record_note": "Terminated instance records can remain visible in AWS after cleanup. They are not running resources."
+    },
+    {
+      "provider": "aws",
+      "scenario": "Lifecycle candidate",
+      "started_at": "2026-10-26T17:01:54.641377+00:00",
+      "finished_at": "2026-10-26T17:02:47.312364+00:00",
+      "status": "complete",
+      "mode": "execute",
+      "cleanup_verified": true,
+      "remaining_task_resources": 0,
+      "errors": 0,
+      "unverified_resources": 0,
+      "historical_record_note": "Terminated instance records can remain visible in AWS after cleanup. They are not running resources."
+    },
+    {
+      "provider": "gcp",
+      "scenario": "Lifecycle candidate",
+      "started_at": "2026-10-26T17:12:59.411930+00:00",
+      "finished_at": "2026-10-26T17:15:06.259873+00:00",
+      "status": "complete",
+      "mode": "execute",
+      "cleanup_verified": true,
+      "remaining_task_resources": 0,
+      "errors": 0,
+      "resource_kinds_verified_absent": [
+        "network",
+        "subnet",
+        "ssh_firewall",
+        "web_firewall",
+        "instance",
+        "disk"
+      ]
+    }
+  ],
+  "omitted": "Account, project, region, resource identifiers, addresses, credentials, and unrelated pre-existing infrastructure."
+}

@@ -1,0 +1,42 @@
+Observed: 2026-10-26T15:18:48.500690+00:00
+Command: cd /opt/superplane-qa/superplane && sudo docker compose down -v --remove-orphans
+ Container superplane-caddy-1 Stopping 
+ Container superplane-fleet-manager-1 Stopping 
+ Container superplane-fleet-manager-1 Stopped 
+ Container superplane-fleet-manager-1 Removing 
+ Container superplane-fleet-manager-1 Removed 
+ Container superplane-caddy-1 Stopped 
+ Container superplane-caddy-1 Removing 
+ Container superplane-caddy-1 Removed 
+ Container superplane-app-1 Stopping 
+ Container superplane-app-1 Stopped 
+ Container superplane-app-1 Removing 
+ Container superplane-app-1 Removed 
+ Container superplane-prepare-volumes-1 Stopping 
+ Container superplane-db-1 Stopping 
+ Container superplane-rabbitmq-1 Stopping 
+ Container superplane-prepare-volumes-1 Stopped 
+ Container superplane-prepare-volumes-1 Removing 
+ Container superplane-prepare-volumes-1 Removed 
+ Container superplane-db-1 Stopped 
+ Container superplane-db-1 Removing 
+ Container superplane-db-1 Removed 
+ Container superplane-rabbitmq-1 Stopped 
+ Container superplane-rabbitmq-1 Removing 
+ Container superplane-rabbitmq-1 Removed 
+ Volume superplane_blob-data Removing 
+ Volume superplane_caddy-config Removing 
+ Volume superplane_caddy-data Removing 
+ Network superplane_default Removing 
+ Volume superplane_rabbitmq-data Removing 
+ Network superplane_default Resource is still in use 
+ Volume superplane_blob-data Removed 
+ Volume superplane_postgres-data Removing 
+ Volume superplane_runner-active-logs Removing 
+ Volume superplane_caddy-data Removed 
+ Volume superplane_caddy-config Removed 
+ Volume superplane_rabbitmq-data Removed 
+ Volume superplane_postgres-data Removed 
+ Volume superplane_runner-active-logs Removed 
+
+Exit code: 0

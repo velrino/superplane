@@ -1,0 +1,15 @@
+{
+  "artifact_type": "selected-field summary",
+  "provider": "aws",
+  "release": "v1.0.0-rc7",
+  "uninstall_observed_at": "2026-10-26T15:18:48.500690+00:00",
+  "command": "docker compose down -v --remove-orphans",
+  "exit_code": 0,
+  "warning": "Network superplane_default Resource is still in use",
+  "inventory_observed_at": "2026-10-26T15:18:50.339757+00:00",
+  "running_managed_runners_after_uninstall": 1,
+  "remaining_runner_image": "ghcr.io/superplanehq/runner:v0.2.1",
+  "remaining_runner_has_compose_project_label": false,
+  "project_network_remaining": true,
+  "omitted": "Container and network identifiers, runner identifiers, and unrelated Docker network entries."
+}
