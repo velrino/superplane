@@ -73,6 +73,7 @@ blocks:
             - make check.proto.field.numbers
             - make check.configuration.fields
             - make check.grpc.actions.status
+            - make check.ee.imports
             - make check.models.tx.debt
             - make check.generated.artifacts
 
@@ -107,6 +108,11 @@ blocks:
         - name: Secrets
           commands:
             - bash ./scripts/check_committed_secrets.sh
+
+        - name: Licenses
+          commands:
+            - bash scripts/license-check-test.sh
+            - make test.license.check
 
         - name: npm audit
           commands:
