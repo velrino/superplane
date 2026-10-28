@@ -59,40 +59,15 @@ make dev.setup     # Codegen, Go + JS deps, and migrate superplane_dev
 make dev.server    # Start air, Vite, and the Docker Fleet Manager
 ```
 
-After the first setup, run `make dev.up` when the stack is not running, then
-`make dev.server` to start air, Vite, and the workers (use
-`make dev.server.fg` for foreground logs). Re-run `make dev.setup` when you
-need a fresh `npm install`, codegen, or migrations.
+When `make dev.server` reports the app as healthy, open SuperPlane at [http://localhost:8000](http://localhost:8000) and complete the initial account setup.
 
-When `make dev.server` reports the app as healthy, open SuperPlane at [http://localhost:8000](http://localhost:8000).
+For subsequent sessions, you only need `make dev.up` followed by `make dev.server` (or `make dev.server.fg` for foreground logs).
 
-After owner setup, create the required installation fleets through the admin
-API or admin CLI. Create a personal API token for the installation
-administrator and set `INSTALLATION_ADMIN_TOKEN` in `.env`. The Docker Fleet
-Manager then creates an ephemeral runner for each integrated task. The
-`new_runners` feature is enabled for every organization.
+For detailed guidance on everyday workflows, runner tools, database snapshots, or connecting external services, see:
 
-A local dump lets you create a new environment without owner setup or GitHub
-connection. This is the intended path when a script or agent creates local
-environments.
-See [Local database snapshot](docs/contributing/local-database-snapshot.md).
-
-`make dev.up`, `make dev.setup`, and `make dev.server` use the integrated
-runner API and Docker Fleet Manager. Set `TASK_BROKER_*` in `.env` only while
-you test legacy or remote broker routing (see `.env.example`).
-
-The local worker image includes Claude Code, Codex, OpenCode, git, `gh`, and
-`jq` so factory line apps can run locally. Do not install those CLIs on the
-host. Connect GitHub and Claude integrations in the organization before you
-dispatch a factory line. Factory nodes use those integrations, not `.env`
-`ANTHROPIC_API_KEY`. After you change `release/runner/Dockerfile`, run
-`make dev.up` again. Check tools with `make doctor-local` after
-`make dev.server`. OpenCode must be on the runner `PATH` for Run OpenRouter
-Agent.
-
-Local hosted OpenRouter is optional. Set `SUPERPLANE_DEV_HOSTED_OPENROUTER`
-in `.env` only when you need the SuperPlane-hosted provider. See
-[Connecting to third-party services](docs/contributing/connecting-to-3rdparty-services-from-development.md).
+- [Local development guide](docs/contributing/local-development.md) — Returning workflow, runner tools, logs, and troubleshooting
+- [Local database snapshot](docs/contributing/local-database-snapshot.md) — Skip manual setup by restoring a database dump
+- [Connecting to third-party services](docs/contributing/connecting-to-3rdparty-services-from-development.md) — Webhook tunnels and hosted OpenRouter
 
 ## Additional Development Resources
 
@@ -104,6 +79,7 @@ in `.env` only when you need the SuperPlane-hosted provider. See
 ### Contributing
 
 - **[Discord](https://discord.gg/KC78eCNsnw)** - Join our Discord community for discussions, questions, and collaboration
+- **[Local Development Guide](docs/contributing/local-development.md)** - Everyday workflow, runner tools, foreground logs, and troubleshooting
 - **[Issue Tracking](docs/contributing/issue-tracking.md)** - How to report bugs, use the SuperPlane Board, and understand issue types
 - **[Pull Requests](docs/contributing/pull-requests.md)** - How to create pull-requests
 - **[Commit Sign-off](docs/contributing/commit_sign-off.md)** - Information about the Developer's Certificate of Origin and signing off commits
