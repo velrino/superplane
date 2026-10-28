@@ -1,0 +1,47 @@
+Contributor quickstart validation — 2026-10-28
+
+Upstream base: ae29a03b8e76d9db43798aecbbee8256e360a5c3
+Documentation commit: e9f59058f52c990f2f0e07532c1c716e7673bcd9
+
+Environment: isolated Docker Compose project with fresh project-scoped volumes.
+Alternate port 8026 avoids the existing development instance on port 8000.
+A temporary Compose override gives this project separate image tags and runner configuration.
+No integration credentials or manual INSTALLATION_ADMIN_TOKEN were supplied.
+
+Command results:
+  make dev.up       exit 0
+  make dev.setup    exit 0
+  make dev.server   exit 0
+  GET /health      HTTP 200
+
+Before browser owner setup:
+  installation owners: 0
+  local default fleets: 1
+  Local Fleet Manager tokens: 0
+
+After browser owner setup:
+  installation owners: 1
+  local default fleets: 1
+  Local Fleet Manager tokens: 1
+
+Fleet Manager log excerpts:
+  Waiting for the local owner account.
+  Local Fleet Manager credentials are ready.
+  fleet reconciliation completed
+
+Browser result:
+  Created a disposable owner in the local test database.
+  Continued past the active development license.
+  Skipped optional SMTP and fleet configuration.
+  Reached workspace onboarding.
+
+Documentation results:
+  28 relative link occurrences and heading anchors: passed
+  Markdown structure and existing Prettier: passed
+  Rendered quickstart and linked development guide: visually inspected
+  Setup section: 321 -> 117 words (about 64% shorter)
+  git diff --check: passed
+  make check.generated.artifacts: passed
+
+Validation scope: first launch and automatic local fleet authentication.
+External provider authentication and task execution were not exercised.
