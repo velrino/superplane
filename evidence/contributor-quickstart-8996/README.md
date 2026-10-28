@@ -5,7 +5,7 @@ See [the validation record](validation.txt) for the environment and checks.
 
 ## Rendered Quickstart
 
-The preview uses the Markdown from documentation commit `e9f59058f`.
+The preview uses the Markdown from documentation commit `3b9d7578b`.
 
 ![Rendered contributor quickstart](quickstart-preview.jpg)
 

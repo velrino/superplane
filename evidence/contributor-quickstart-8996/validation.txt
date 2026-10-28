@@ -1,7 +1,11 @@
 Contributor quickstart validation — 2026-10-28
 
 Upstream base: ae29a03b8e76d9db43798aecbbee8256e360a5c3
-Documentation commit: e9f59058f52c990f2f0e07532c1c716e7673bcd9
+Documentation commit: 3b9d7578b318239426a3d2df6c7ad465e1f1499f
+Runtime validation commit: e9f59058f52c990f2f0e07532c1c716e7673bcd9
+The final revision changes only command comments and onboarding guidance.
+Application code and executable startup commands are unchanged.
+Markdown checks and the quickstart screenshot were refreshed for the final revision.
 
 Environment: isolated Docker Compose project with fresh project-scoped volumes.
 Alternate port 8026 avoids the existing development instance on port 8000.
@@ -39,7 +43,7 @@ Documentation results:
   28 relative link occurrences and heading anchors: passed
   Markdown structure and existing Prettier: passed
   Rendered quickstart and linked development guide: visually inspected
-  Setup section: 321 -> 117 words (about 64% shorter)
+  Setup section: 321 -> 100 words (about 69% shorter)
   git diff --check: passed
   make check.generated.artifacts: passed
 
