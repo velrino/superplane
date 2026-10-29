@@ -1,0 +1,15 @@
+{
+  "pixels": [
+    3840,
+    2160
+  ],
+  "bytes": 635739,
+  "sha256": "034490d85b8827a922b8918f7f1dcfa401bcc30127e9015c24055bc56fb1366a",
+  "renderer": "Graphviz + diagrams + Pillow",
+  "styleReference": "https://github.com/superplanehq/superplane/pull/8880",
+  "sourceSnapshot": "e2cb3dbe868fde28b8c9053c01c1642915571c98",
+  "visualReview": "no blockers after centering main flow and placing state above and runners below",
+  "sourceReview": "current execution, runner capacity, messaging and log storage traced to source",
+  "footer": "removed",
+  "reviewTerminology": "deprecated Lines removed; automations retained"
+}

@@ -1,0 +1,272 @@
+{
+  "issue": 8997,
+  "repository": "superplanehq/superplane",
+  "snapshot": "e2cb3dbe868fde28b8c9053c01c1642915571c98",
+  "recorded_at": "2026-10-29T15:52:06.276031+00:00",
+  "method": "Read-only source inspection; runtime verification not claimed.",
+  "claims": [
+    {
+      "key": "workspace",
+      "claim": "UI workspace is the organization-scoped Factory resource.",
+      "sources": [
+        {
+          "path": "pkg/models/factory.go",
+          "start_line": 50,
+          "end_line": 80,
+          "blob_sha": "cfcd97fad1e185c3d3b2e04ba81180c0c51a2b48",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/factory.go#L50-L80"
+        },
+        {
+          "path": "web_src/src/App.tsx",
+          "start_line": 165,
+          "end_line": 175,
+          "blob_sha": "d73246bafa6c907bd28edd75bbe84a28eb28a7aa",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/web_src/src/App.tsx#L165-L175"
+        }
+      ]
+    },
+    {
+      "key": "task",
+      "claim": "Product tasks are FactoryWorkOrder records, distinct from runner execution jobs.",
+      "sources": [
+        {
+          "path": "pkg/models/factory_work_order.go",
+          "start_line": 45,
+          "end_line": 88,
+          "blob_sha": "9bca38b76a287f1b4f6632f95616213ce60ab0c3",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/factory_work_order.go#L45-L88"
+        },
+        {
+          "path": "pkg/models/runner_task.go",
+          "start_line": 45,
+          "end_line": 76,
+          "blob_sha": "c2a214736140f7f3d1c6a4f61902e987279ad25e",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/runner_task.go#L45-L76"
+        }
+      ]
+    },
+    {
+      "key": "automation",
+      "claim": "Workspace automations use canvases and versioned execution graphs.",
+      "sources": [
+        {
+          "path": "pkg/grpc/actions/factories/create_factory_automation.go",
+          "start_line": 69,
+          "end_line": 111,
+          "blob_sha": "d424fc9316c740837a8a18b4f2ddcd2292551174",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/grpc/actions/factories/create_factory_automation.go#L69-L111"
+        },
+        {
+          "path": "pkg/models/canvas.go",
+          "start_line": 32,
+          "end_line": 49,
+          "blob_sha": "b26ffd18d8f93999bb010f35e22ac19ddc3a45be",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/canvas.go#L32-L49"
+        }
+      ]
+    },
+    {
+      "key": "automation_steps",
+      "claim": "The implementation sequences configured automation entrypoints as ordered runApp steps. Dispatch creates a version-pinned run and task execution record.",
+      "sources": [
+        {
+          "path": "pkg/models/factory_line.go",
+          "start_line": 14,
+          "end_line": 39,
+          "blob_sha": "648c54bdfe4d82a1bdb309e5207554944f6e72e3",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/factory_line.go#L14-L39"
+        },
+        {
+          "path": "pkg/models/factory_work_order_line_dispatch.go",
+          "start_line": 300,
+          "end_line": 365,
+          "blob_sha": "f832b13e5c03de72863222bb7b4137c38d5fc4de",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/factory_work_order_line_dispatch.go#L300-L365"
+        }
+      ]
+    },
+    {
+      "key": "processes",
+      "claim": "The same server starts configured public/runner API and worker roles; logical boxes are not necessarily separate deployments.",
+      "sources": [
+        {
+          "path": "pkg/server/server.go",
+          "start_line": 909,
+          "end_line": 955,
+          "blob_sha": "714b1b7de1485cca1c60961b7ec602f0c3198a2f",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/server/server.go#L909-L955"
+        },
+        {
+          "path": "pkg/server/server.go",
+          "start_line": 250,
+          "end_line": 313,
+          "blob_sha": "714b1b7de1485cca1c60961b7ec602f0c3198a2f",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/server/server.go#L250-L313"
+        }
+      ]
+    },
+    {
+      "key": "postgres",
+      "claim": "PostgreSQL stores domain/execution state and integrated runner queued jobs.",
+      "sources": [
+        {
+          "path": "pkg/database/connection.go",
+          "start_line": 93,
+          "end_line": 105,
+          "blob_sha": "e1019385cfcc262ba44d0e9fcad6e78cf911114a",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/database/connection.go#L93-L105"
+        },
+        {
+          "path": "pkg/workers/contexts/runner_task_context.go",
+          "start_line": 38,
+          "end_line": 79,
+          "blob_sha": "788cbf3e4d865dc9035e5a432e02d4b2d73ac742",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/workers/contexts/runner_task_context.go#L38-L79"
+        },
+        {
+          "path": "pkg/models/runner_task.go",
+          "start_line": 265,
+          "end_line": 294,
+          "blob_sha": "c2a214736140f7f3d1c6a4f61902e987279ad25e",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/models/runner_task.go#L265-L294"
+        }
+      ]
+    },
+    {
+      "key": "rabbitmq",
+      "claim": "RabbitMQ carries execution events and runner-control wake notifications, rather than task payloads to runner processes.",
+      "sources": [
+        {
+          "path": "pkg/grpc/actions/factories/dispatch_work_order.go",
+          "start_line": 352,
+          "end_line": 373,
+          "blob_sha": "0d52a31a529f3ebacafec276e5303e93acbdeb38",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/grpc/actions/factories/dispatch_work_order.go#L352-L373"
+        },
+        {
+          "path": "pkg/workers/run_initializer.go",
+          "start_line": 94,
+          "end_line": 125,
+          "blob_sha": "f60e233abc8bc8dd4279ee23b29bac7b300dd09f",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/workers/run_initializer.go#L94-L125"
+        },
+        {
+          "path": "pkg/runners/control/notifications.go",
+          "start_line": 10,
+          "end_line": 55,
+          "blob_sha": "50d7271822da6bfea30173656eb0afe162c90f15",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/runners/control/notifications.go#L10-L55"
+        }
+      ]
+    },
+    {
+      "key": "runner_transport",
+      "claim": "Runners register with HTTP, connect via WebSocket, reserve jobs by fleet, upload HTTP log chunks and report durable completion before graph progress.",
+      "sources": [
+        {
+          "path": "pkg/public/runnerapi/server.go",
+          "start_line": 68,
+          "end_line": 81,
+          "blob_sha": "56a0bd4e0caa5e26bb27d6b9e24aac0cc2f97bce",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/public/runnerapi/server.go#L68-L81"
+        },
+        {
+          "path": "pkg/public/runnerapi/websocket.go",
+          "start_line": 372,
+          "end_line": 400,
+          "blob_sha": "b73f6367143176df716843237608eb9fce48aa54",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/public/runnerapi/websocket.go#L372-L400"
+        },
+        {
+          "path": "pkg/public/runnerapi/websocket.go",
+          "start_line": 534,
+          "end_line": 578,
+          "blob_sha": "b73f6367143176df716843237608eb9fce48aa54",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/public/runnerapi/websocket.go#L534-L578"
+        },
+        {
+          "path": "pkg/runners/README.md",
+          "start_line": 6,
+          "end_line": 20,
+          "blob_sha": "9eb502d20693f64f53927967876afd69afa3ca16",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/runners/README.md#L6-L20"
+        }
+      ]
+    },
+    {
+      "key": "fleet_manager",
+      "claim": "Fleet Manager reconciles capacity through installation admin HTTP API and infrastructure providers; it creates unbound ephemeral runners with warm/max controls and does not relay task payloads.",
+      "sources": [
+        {
+          "path": "pkg/fleets/README.md",
+          "start_line": 1,
+          "end_line": 5,
+          "blob_sha": "f5bdbb4bb4260082df196474e9fb7cee0b9fc1a5",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/fleets/README.md#L1-L5"
+        },
+        {
+          "path": "pkg/fleets/reconcile/reconciler.go",
+          "start_line": 315,
+          "end_line": 378,
+          "blob_sha": "297228b54adbd969609dc05d8e4069292d930b56",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/fleets/reconcile/reconciler.go#L315-L378"
+        },
+        {
+          "path": "pkg/fleets/reconcile/reconciler.go",
+          "start_line": 381,
+          "end_line": 454,
+          "blob_sha": "297228b54adbd969609dc05d8e4069292d930b56",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/fleets/reconcile/reconciler.go#L381-L454"
+        },
+        {
+          "path": "pkg/fleets/README.md",
+          "start_line": 199,
+          "end_line": 205,
+          "blob_sha": "f5bdbb4bb4260082df196474e9fb7cee0b9fc1a5",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/fleets/README.md#L199-L205"
+        }
+      ]
+    },
+    {
+      "key": "legacy",
+      "claim": "Retired task broker settings support historical logs. New jobs use the integrated runner API.",
+      "sources": [
+        {
+          "path": ".env.example",
+          "start_line": 103,
+          "end_line": 108,
+          "blob_sha": "5207ad9446f20db9b27f2691fdad207423d1aa57",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/.env.example#L103-L108"
+        },
+        {
+          "path": "pkg/components/runner/create_task.go",
+          "start_line": 15,
+          "end_line": 64,
+          "blob_sha": "a0255264714483eac0015c2248e113c9f55d5024",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/components/runner/create_task.go#L15-L64"
+        }
+      ]
+    },
+    {
+      "key": "progress",
+      "claim": "Runner results feed component execution, graph output and task line-step progression.",
+      "sources": [
+        {
+          "path": "pkg/components/runner/runner_task_lifecycle.go",
+          "start_line": 71,
+          "end_line": 120,
+          "blob_sha": "e5c82de85a3107272844fb6da52c6b12ee315fe2",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/components/runner/runner_task_lifecycle.go#L71-L120"
+        },
+        {
+          "path": "pkg/workers/run_finalizer.go",
+          "start_line": 632,
+          "end_line": 725,
+          "blob_sha": "7c82713104270efeab71f79971bed41aa2d4b799",
+          "url": "https://github.com/superplanehq/superplane/blob/e2cb3dbe868fde28b8c9053c01c1642915571c98/pkg/workers/run_finalizer.go#L632-L725"
+        }
+      ]
+    }
+  ],
+  "diagram_scope": "Logical component diagram: UI, API/actions, execution workers, PostgreSQL, RabbitMQ, integrated runner API, runners, external tools, and Fleet Manager as capacity-management side plane."
+}
